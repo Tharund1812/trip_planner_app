@@ -1,0 +1,166 @@
+/* Main container to hold the image and form side by side */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* 70% of the viewport height */
+    width: 70vw;  /* 70% of the viewport width */
+    background-color: #f0f0f0;
+    
+    /* Center the container */
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+  }
+  
+  
+  /* Image container on the left */
+  .image-container {
+    flex: 1;
+    max-width: 50%; /* Take up half of the container width */
+    height: 100%; /* Match the height of the container */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keep the aspect ratio intact */
+  }
+  
+  /* Form container on the right */
+  .form-container {
+    flex: 1;
+    max-width: 50%; /* Take up the other half of the container width */
+    height: 100%; /* Match the height of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form heading styling */
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form element styling */
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Form options for checkbox and forgot password */
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-options label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-options a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  /* Button styling */
+  .form-container button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-container button:hover {
+    background-color: #218838;
+  }
+  
+  /* Social login buttons */
+  .social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .social-login button {
+    flex: 1;
+    background-color: #fff;
+    color: black;
+    padding: 0.75rem;
+    margin: 0 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .social-login button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Paragraph for sign-up link */
+  p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  /* Social Login Buttons */
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-button.google {
+    color: #4285f4;
+  }
+  
+  .social-button.apple {
+    color: #333;
+  }
+  
+  .social-button.facebook {
+    color: #4267B2;
+  }
+  
+  .social-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .social-button svg {
+    margin-right: 0.5rem;
+  }
+  
